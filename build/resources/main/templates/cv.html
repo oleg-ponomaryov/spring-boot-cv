@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+</head>
+<body>
+<div class="container">
+
+    <h2>CV Details</h2>
+        <div>
+                <div th:inline="text">
+                	First name:
+				    <strong th:text="${person.firstName}"></strong>
+				</div>
+
+                <div th:inline="text">
+                	Last name:
+				    <strong th:text="${person.lastName}"></strong>
+				</div>
+
+                <div th:inline="text">
+                	Country:
+				    <strong th:text="${country.name}"></strong>
+				</div>
+
+                <div th:inline="text">
+                	Date:
+				    <strong th:text="${#dates.format(person.date, 'dd-MMM-yyyy')}"></strong>
+				</div>
+    </div>
+</div>
+
+</body>
+</html>
