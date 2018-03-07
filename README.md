@@ -8,7 +8,7 @@
 	- gradle build
 	
 - How to run
-	- cd build/lis
+	- cd build/libs
 	- java -jar cv-0.0.1-SNAPSHOT.jar
-	- navigate browser to http://localhost:8080
+	- navigate your browser to http://localhost:8080
 
